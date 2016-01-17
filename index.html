@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Imfine CSS Framework</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lora|Ubuntu' rel='stylesheet' type='text/css'>
+
+    <!-- Framework -->
+    <link href="css/all.css" rel="stylesheet">
+    
+    <style>
+        .comparator{display: flex;justify-content: space-between;}
+        .comparator > div{min-width: 40%;}
+        .section-header{text-transform: uppercase;border-bottom: 1px solid #eee;}
+        .section-header h2{margin-bottom: 0;}
+    </style> 
+</head>
+<body>
+    
+    <nav class="nav nav-fixed-top nav-right">
+    
+        <ul>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    
+    </nav>
+    
+    <div class="site container">
+        
+        <h1>CSS Framework</h1>
+
+        <section id="typography">
+
+            <header class="section-header">
+
+                <h2>Typography</h2>
+
+            </header>
+
+            <article>
+
+                <h1>Heading 1</h1>
+
+                <h2>Heading 2</h2>
+
+                <h3>Heading 3</h3>
+
+                <h4>Heading 4</h4>
+
+                <h5>Heading 5</h5>
+
+                <h6>Heading 6</h6>
+
+                <p class="align-left">This is a paragraph ! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ligula dapibus eros posuere efficitur a nec diam. Nunc ante odio, sagittis at orci non, auctor egestas odio. Sed gravida auctor tristique. Ut sit amet mollis nisi, eu ullamcorper lorem. Pellentesque eu feugiat ante. Suspendisse potenti.</p>
+
+                <p class="align-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ligula dapibus eros posuere efficitur a nec diam. Nunc ante odio, sagittis at orci non, auctor egestas odio. Sed gravida auctor tristique. Ut sit amet mollis nisi, eu ullamcorper lorem. Pellentesque eu feugiat ante. Suspendisse potenti.</p>
+
+                <p class="align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ligula dapibus eros posuere efficitur a nec diam. Nunc ante odio, sagittis at orci non, auctor egestas odio. Sed gravida auctor tristique. Ut sit amet mollis nisi, eu ullamcorper lorem. Pellentesque eu feugiat ante. Suspendisse potenti.</p>
+
+                <p class="align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ligula dapibus eros posuere efficitur a nec diam. Nunc ante odio, sagittis at orci non, auctor egestas odio. Sed gravida auctor tristique. Ut sit amet mollis nisi, eu ullamcorper lorem. Pellentesque eu feugiat ante. Suspendisse potenti.</p>
+
+                <p><a href="#">This is a link</a></p>
+
+                <blockquote>This is a comment ! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in ligula dapibus eros posuere efficitur a nec diam. Nunc ante odio, sagittis at orci non, auctor egestas odio. Sed gravida auctor tristique. Ut sit amet mollis nisi, eu ullamcorper lorem. Pellentesque eu feugiat ante. Suspendisse potenti.</blockquote>
+
+                <ul>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                </ul>
+
+                <ol>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                    <li>List point</li>
+                </ol>
+
+            </article>
+
+        </section>
+        
+        <section id="forms">
+        
+            <header class="section-header">
+            
+                <h2>Forms</h2>
+                
+            </header>
+        
+            <article>
+            
+                <h5>Search Form</h5>
+                
+                <form role="search">
+                    
+                    <div class="input-field">
+                
+                        <label>Search</label>
+                    
+                        <input type="search" placeholder="search...">
+                    
+                    </div>
+                    
+                    <div class="input-submit">
+                    
+                        <input type="submit" value="search" class="button-medium">
+                    
+                    </div>
+                
+                </form>
+            
+            </article>
+        
+        </section>
+        
+        <section id="buttons">
+        
+            <header class="section-header">
+            
+                <h2>Buttons</h2>
+                
+            </header>
+        
+            <article>
+            
+                <h5>Small button</h5>
+                
+                <div>
+                
+                    <a href="#" class="button-small">This is a small button</a>
+                
+                </div>
+                
+                <h5>Medium button</h5>
+                
+                <div>
+                
+                    <a href="#" class="button-medium">This is a medium button</a>
+                
+                </div>
+                
+                <h5>Large button</h5>
+                
+                <div>
+                
+                    <a href="#" class="button-large">This is a large button</a>
+                
+                </div>
+                
+                <h5>Line button</h5>
+                
+                <div>
+                
+                    <a href="#" class="button-line">This is a line button</a>
+                
+                </div>
+            
+            </article>
+        
+        </section>
+        
+        <section id="tables">
+        
+            <header class="section-header">
+            
+                <h2>Tables</h2>
+                
+            </header>
+        
+            <article>
+            
+                <h5>Table</h5>
+                
+                <div>
+                
+                    <table>
+                        
+                        <thead>
+                            <tr>
+                                <th>Col 1</th>
+                                <th>Col 2</th>
+                                <th>Col 3</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Col 1</td>
+                                <td>Col 2</td>
+                                <td>Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Col 1</td>
+                                <td>Col 2</td>
+                                <td>Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Col 1</td>
+                                <td>Col 2</td>
+                                <td>Col 3</td>
+                            </tr>
+                            <tr>
+                                <td>Col 1</td>
+                                <td>Col 2</td>
+                                <td>Col 3</td>
+                            </tr>
+                        </tbody>
+                    
+                    </table>
+                
+                </div>
+            
+            </article>
+        
+        </section>
+        
+    </div>
+
+</body>
+</html>
