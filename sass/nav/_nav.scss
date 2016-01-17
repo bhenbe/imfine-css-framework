@@ -1,0 +1,41 @@
+.nav{
+    position: relative;
+    background: white;
+    border-bottom: 1px solid ghostWhite;
+    padding: $baseFontSize;
+    
+    &.nav-fixed-top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0 8px rgba(0,0,0,.2);
+    }
+
+    & > ul{
+        display: flex;
+        flex-direction: row;
+        @include resetUl();
+        
+        & > li{
+            position: relative;
+            
+            & > a{
+                display: inline-block;
+                padding: $baseFontSize / 2 $baseFontSize;
+                text-transform: uppercase;
+                color: #666;
+                
+                &:hover,
+                &:active{
+                    color: darken(#333, 10%);
+                }
+            }
+        }
+    }
+    
+    &.nav-right > ul{
+        justify-content: flex-end;
+    }
+    
+}

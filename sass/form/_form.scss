@@ -1,0 +1,123 @@
+form {
+	margin-bottom: $baseLineHeight;
+    
+    fieldset {
+        border: none;
+        margin: 0 0 $baseLineHeight 0;
+        padding: $baseLineHeight 0 0 0;
+    }
+    legend {
+        padding: $basePadding;
+        font-weight: 700;
+    }
+
+    label {
+	   display: block;
+	   margin-bottom: $baseLineHeight;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+	   margin: 0 $basePadding / 2;
+	   vertical-align: text-top;
+    }
+    
+    select,
+    select[multiple],
+    select[size],
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="number"],
+    input[type="search"],
+    input[type="date"] {
+        display: inherit;
+        height: $baseLineHeight;
+        padding: $basePadding / 2;
+        margin: 0 0 $basePadding 0;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="date"]{
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: auto;
+        min-height: 60px;
+        width: 100%;
+        margin-bottom: $basePadding;
+    }
+    
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="phone"],
+    input[type="search"],
+    select[multiple],
+    select[size],
+    input[type="date"] {
+        background-color: #fff;
+        border: 1px solid $formBorder;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+        transition: all linear 0.2s;
+    }
+    
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="date"]:focus {
+        border-color: darken($formBorder, 10%);
+        outline: 0;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+    }
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        select {
+            border: 1px solid $formBorder;
+            color: #444;
+        }
+    }
+    select,
+    input[type="file"] {
+        height: $baseFontSize;
+        line-height: $baseFontSize;
+    }
+    select[multiple],
+    select[size] {
+      height: auto;
+    }
+    input:-moz-placeholder {
+      color: $formPlaceholder;
+    }
+    :-ms-input-placeholder {
+      color: $formPlaceholder;
+    }
+    ::-webkit-input-placeholder {
+      color: $formPlaceholder;
+    }
+}

@@ -1,0 +1,102 @@
+html {
+    font-family: $primaryFont;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: auto;
+}
+
+body{
+    @include fontSize($baseFontSize);
+    color: $fontColor;
+    font-weight: $baseWeight;
+}
+/* Copy & Lists */
+
+header,
+article,
+footer{
+    line-height: $baseLineHeight;
+    margin-bottom: $baseMargin / 2;
+}
+
+p {
+    line-height: $baseLineHeight;
+    margin-top: 0;
+    margin-bottom: $baseMargin;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: $baseMargin;
+    li {
+        line-height: $baseLineHeight;
+    }
+    ul,
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+blockquote {
+    line-height: $baseLineHeight;
+    margin: 0 0 $baseMargin 0;
+    padding-left: $baseMargin;
+    border-left: 6px solid ghostwhite;
+    font-style: italic;
+}
+a{
+    display: inline-block;
+    color: $linkColor;
+    text-decoration: none;
+    
+    &:hover,
+    &:active{
+        color: $linkHoverColor;
+    }
+}
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: $baseMargin;
+    line-height: $baseLineHeight;
+    font-family: $secondaryFont;
+    font-weight: $headingWeight;
+    color: $headingColor;
+}
+h1 {
+    @include fontSize($heading1Size);
+}
+h2 {
+    @include fontSize($heading2Size);
+}
+h3 {
+    @include fontSize($heading3Size);
+}
+h4 {
+    @include fontSize($heading4Size);
+}
+h5 {
+    @include fontSize($heading5Size);
+}
+h6 {
+    @include fontSize($heading6Size);
+}
+
+/* Classes */
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.align-justify{
+    text-align: justify;
+}

@@ -1,0 +1,17 @@
+@import '_mixins';
+
+.button-small{
+    @include smallButton(white, $colorBlue, $colorBlue);
+}
+
+.button-medium{
+    @include mediumButton(white, $colorBlue, $colorBlue);
+}
+
+.button-large{
+    @include largeButton(white, $colorBlue, $colorBlue);
+}
+
+.button-line{
+    @include mediumLineButton($colorBlue, white, 6px);
+}

@@ -1,0 +1,25 @@
+@import '_mixins';
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    @include Container($baseMaxWidth, $basePadding);
+}
+
+.container,
+.clearfix{
+    &:before,
+    &:after{
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+@include minBreakpoint(720px) {
+    .container{
+        //add styles
+    }
+}

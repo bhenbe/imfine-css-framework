@@ -1,0 +1,99 @@
+.alignnone {
+    text-align: left;
+}
+
+.aligncenter,
+div.aligncenter {
+    text-align: center;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 $basePadding $basePadding;
+}
+
+a img.alignnone {
+    margin: 0 0 $basePadding 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 $basePadding $basePadding 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin: 0 auto $basePadding;
+}
+
+.wp-caption {
+    max-width: 100%;
+    padding: $basePadding;
+    text-align: center;
+    margin: 0 0 $basePadding 0;
+}
+
+.wp-caption.alignnone {
+    text-align: left;
+}
+
+.wp-caption.alignleft {
+    text-align: left;
+}
+
+.wp-caption.alignright {
+    text-align: right;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}

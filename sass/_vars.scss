@@ -1,0 +1,39 @@
+/*** Main ***/
+
+/*** Colors ***/
+$fontColor:    #111 !default;
+$headingColor: #666 !default;
+
+$colorRed:     #F44336 !default;
+$colorBlue:    #2196F3 !default;
+$colorGreen:   #009688 !default;
+$colorOrange:  #FF5722 !default;
+
+$linkColor:      $colorBlue !default;
+$linkHoverColor: lighten($linkColor, 15%) !default;
+
+$formBorder:      #ccc !default;
+$formPlaceholder: #ccc !default;
+
+/*** Typography ***/
+$primaryFont:    'Ubuntu', sans-serif !default;
+$secondaryFont:  'Lora', serif !default;
+
+$baseFontSize:   16px !default; 
+$smallFontSize:  12px !default;
+$largeFontSize:  18px !default;
+$baseWeight:     500 !default;
+$heading1Size:   38px !default; 
+$heading2Size:   34px !default;  
+$heading3Size:   30px !default; 
+$heading4Size:   26px !default; 
+$heading5Size:   22px !default; 
+$heading6Size:   18px !default;
+$headingWeight:  300 !default;
+
+$baseLineHeight: calculateRem( $baseFontSize * 1.5 ) !default;
+$baseMargin: #{$baseLineHeight}rem !default;
+
+/*** padding ***/
+$baseMaxWidth: 1440px !default;
+$basePadding:  16px !default;

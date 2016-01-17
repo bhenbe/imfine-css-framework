@@ -1,0 +1,19 @@
+@mixin Container($size: false, $padding: false) {
+    width: 100%;
+    @if $size {
+        max-width: calculateRem($size, rem);
+    }
+    margin: 0 auto;
+    @if $padding {
+        padding-left: calculateRem($padding, rem);
+        padding-right: calculateRem($padding, rem);
+    }
+}
+
+@mixin minBreakpoint($breakpoint) {
+    $breakpoint: calculateRem($breakpoint, rem);
+
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}

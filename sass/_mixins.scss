@@ -1,0 +1,33 @@
+@function calculateRem($size: false, $suffix: false) {
+    
+    @if not $size{
+        @return 1;
+    }
+    
+    $remSize: $size / 16px;
+    
+    @if not $suffix {
+        @return #{$remSize};
+    } @else {
+        @return #{$remSize}$suffix;
+    }
+}
+
+@mixin fontSize($size) {
+    font-size: calculateRem($size, rem);
+}
+
+@mixin clearFix() {
+    &:before,
+    &:after{
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+@mixin resetUl() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
