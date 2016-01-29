@@ -15,17 +15,16 @@ header,
 article,
 footer{
     line-height: $baseLineHeight;
-    margin-bottom: $baseMargin / 2;
 }
 
 p {
     line-height: $baseLineHeight;
-    margin-top: 0;
+    margin-top: $baseMargin;
     margin-bottom: $baseMargin;
 }
 ul,
 ol {
-    margin-top: 0;
+    margin-top: $baseMargin;
     margin-bottom: $baseMargin;
     li {
         line-height: $baseLineHeight;
@@ -38,7 +37,7 @@ ol {
 }
 blockquote {
     line-height: $baseLineHeight;
-    margin: 0 0 $baseMargin 0;
+    margin: $baseMargin 0 $baseMargin 0;
     padding-left: $baseMargin;
     border-left: 6px solid ghostwhite;
     font-style: italic;
@@ -61,11 +60,11 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top: $baseMargin;
     margin-bottom: $baseMargin;
-    line-height: $baseLineHeight;
     font-family: $secondaryFont;
     font-weight: $headingWeight;
+    line-height: $headingLineHeight;
     color: $headingColor;
 }
 h1 {

@@ -1,17 +1,30 @@
 @import '_mixins';
 
-.button-small{
-    @include smallButton(white, $colorBlue, $colorBlue);
-}
-
-.button-medium{
-    @include mediumButton(white, $colorBlue, $colorBlue);
-}
-
-.button-large{
-    @include largeButton(white, $colorBlue, $colorBlue);
+.button{
+    display: inline-block;
+    background: transparent;
+    border: $buttonBorderWidth solid transparent;
+    @include baseButton($buttonBaseForegroundColor, $buttonBaseBackgroundColor, $buttonBaseBackgroundColor);
 }
 
 .button-line{
-    @include mediumLineButton($colorBlue, white, 6px);
+    display: inline-block;
+    @include baseLineButton($colorBlue, white, $buttonLineBorderWidth);
+}
+
+.button,
+.button-line {
+    font-size: calculateRem($baseFontSize, rem);
+    padding: $baseFontSize / 2 $baseFontSize;
+
+    &.button-small{
+        font-size: calculateRem($smallFontSize, rem);
+        padding: $smallFontSize / 2 $smallFontSize;
+    }
+
+    &.button-large{
+        font-size: calculateRem($largeFontSize, rem);
+        padding: $largeFontSize / 2 $largeFontSize;
+    }
+    
 }

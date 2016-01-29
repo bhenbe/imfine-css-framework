@@ -1,5 +1,4 @@
 @mixin baseButton($foregroundColor, $backgroundColor, $borderColor) {
-    display: inline-block;
     color: $foregroundColor;
     background: $backgroundColor;
     border: 1px solid $borderColor;
@@ -12,26 +11,7 @@
     }
 }
 
-@mixin smallButton($foregroundColor, $backgroundColor, $borderColor) {
-    font-size: calculateRem($smallFontSize, rem);
-    padding: $smallFontSize / 2 $smallFontSize;
-    @include baseButton($foregroundColor, $backgroundColor, $borderColor);
-}
-
-@mixin mediumButton($foregroundColor, $backgroundColor, $borderColor) {
-    font-size: calculateRem($baseFontSize, rem);
-    padding: $baseFontSize / 2 $baseFontSize;
-    @include baseButton($foregroundColor, $backgroundColor, $borderColor);
-}
-
-@mixin largeButton($foregroundColor, $backgroundColor, $borderColor) {
-    font-size: calculateRem($largeFontSize, rem);
-    padding: $largeFontSize / 2 $largeFontSize;
-    @include baseButton($foregroundColor, $backgroundColor, $borderColor);
-}
-
 @mixin baseLineButton($foregroundColor, $backgroundColor, $borderWidth) {
-    display: inline-block;
     color: $foregroundColor;
     background: $backgroundColor;
     border: $borderWidth solid $foregroundColor;
@@ -41,22 +21,4 @@
         color: $backgroundColor;
         background: $foregroundColor;
     }
-}
-
-@mixin smallLineButton($foregroundColor, $backgroundColor, $borderWidth) {
-    font-size: calculateRem($smallFontSize, rem);
-    padding: $smallFontSize / 2 $smallFontSize;
-    @include baseLineButton($foregroundColor, $backgroundColor, $borderWidth);
-}
-
-@mixin mediumLineButton($foregroundColor, $backgroundColor, $borderWidth) {
-    font-size: calculateRem($baseFontSize, rem);
-    padding: $baseFontSize / 2 $baseFontSize;
-    @include baseLineButton($foregroundColor, $backgroundColor, $borderWidth);
-}
-
-@mixin largeLineButton($foregroundColor, $backgroundColor, $borderWidth) {
-    font-size: calculateRem($largeFontSize, rem);
-    padding: $largeFontSize / 2 $largeFontSize;
-    @include baseLineButton($foregroundColor, $backgroundColor, $borderWidth);
 }

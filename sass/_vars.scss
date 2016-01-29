@@ -22,18 +22,26 @@ $secondaryFont:  'Lora', serif !default;
 $baseFontSize:   16px !default; 
 $smallFontSize:  12px !default;
 $largeFontSize:  18px !default;
-$baseWeight:     500 !default;
-$heading1Size:   38px !default; 
-$heading2Size:   34px !default;  
-$heading3Size:   30px !default; 
-$heading4Size:   26px !default; 
-$heading5Size:   22px !default; 
-$heading6Size:   18px !default;
-$headingWeight:  300 !default;
+
+$baseWeight:        500 !default;
+$heading1Size:      38px !default; 
+$heading2Size:      34px !default;  
+$heading3Size:      30px !default; 
+$heading4Size:      26px !default; 
+$heading5Size:      22px !default; 
+$heading6Size:      18px !default;
+$headingWeight:     300 !default;
+$headingLineHeight: 1.1 !default;
 
 $baseLineHeight: calculateRem( $baseFontSize * 1.5 ) !default;
-$baseMargin: #{$baseLineHeight}rem !default;
+$baseMargin: calculateRem( $baseFontSize, rem ) !default;
 
 /*** padding ***/
 $baseMaxWidth: 1440px !default;
 $basePadding:  16px !default;
+
+/*** button ***/
+$buttonBorderWidth:         1px !default;
+$buttonLineBorderWidth:     6px !default;
+$buttonBaseBackgroundColor: $colorBlue !default;
+$buttonBaseForegroundColor: white !default;
