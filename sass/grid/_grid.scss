@@ -4,23 +4,18 @@
     box-sizing: border-box;
 }
 
+/*** Container ***/
+
 .container{
-    @include Container($baseMaxWidth, $basePadding);
-}
-
-.container,
-.clearfix{
-    &:before,
-    &:after{
-        display: table;
-        content: " ";
-        clear: both;
+    display: flex;
+    width: 100%;
+    
+    & > .col {
+        flex: 1;
+        margin-left: calculateRem($basePadding, rem);
+        
+        &:first-child{
+            margin-left: 0;
+        }
     }
 }
-
-@include minBreakpoint(720px) {
-    .container{
-        //add styles
-    }
-}
-

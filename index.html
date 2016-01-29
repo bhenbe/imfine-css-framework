@@ -13,10 +13,12 @@
     <link href="css/all.css" rel="stylesheet">
     
     <style>
+        .site{padding: 0 25px 25px 25px;}
         .comparator{display: flex;justify-content: space-between;}
         .comparator > div{min-width: 40%;}
         .section-header{text-transform: uppercase;border-bottom: 1px solid #eee;}
         .section-header h2{margin-bottom: 0;}
+        .col{background: #eee;}
     </style> 
 </head>
 <body>
@@ -28,11 +30,12 @@
             <li><a href="#forms">Forms</a></li>
             <li><a href="#buttons">Buttons</a></li>
             <li><a href="#tables">Tables</a></li>
+            <li><a href="#grids">Grids</a></li>
         </ul>
     
     </nav>
     
-    <div class="site container">
+    <div class="site">
         
         <h1>CSS Framework</h1>
 
@@ -195,9 +198,7 @@
             </header>
         
             <article>
-            
-                <h5>Table</h5>
-                
+
                 <div>
                 
                     <table class="table-border table-odd">
@@ -234,6 +235,34 @@
                         </tbody>
                     
                     </table>
+                
+                </div>
+            
+            </article>
+        
+        </section>
+        
+        <section id="grids">
+        
+            <header class="section-header">
+            
+                <h2>Grids</h2>
+                
+            </header>
+        
+            <article>
+
+                <div style="padding-top: 15px;padding-bottom: 15px;">
+                
+                    <div class="container">
+                    
+                        <div class="col align-center">col #1</div>
+                        
+                        <div class="col align-center">col #2</div>
+                        
+                        <div class="col align-center">col #3</div>
+                    
+                    </div>
                 
                 </div>
             
