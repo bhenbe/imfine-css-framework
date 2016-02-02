@@ -4,38 +4,59 @@ table {
     border-spacing: 0;
     empty-cells: show;
     width: 100%;
-    border: 1px solid #cbcbcb;
     margin-bottom: calculateRem($baseFontSize, rem);
 
     td,
     th {
         background: transparent;
-        border-left: 1px solid #cbcbcb;/*  inner column border */
-        border-width: 0 0 0 1px;
+        border-width: 0;
         font-size: inherit;
         margin: 0;
         overflow: visible; /*to make ths where the title is really long work*/
         padding: 0.5em 1em; /* cell padding */
-        
-        &:first-child{
-            border-left-width: 0;
-        }
     }
     
-    thead {
-        background-color: #e0e0e0;
-        color: #000;
+    thead,
+    tfoot{
         text-align: left;
         vertical-align: bottom;
     }
+    
+    thead {
+        background-color: $tableHeadBackground;
+        font-weight: 800;
+        border-bottom: 3px solid darken($tableBorderColor, 20%);
+    }
+    
+    tfoot{
+        color: $secondaryColor;
+        background-color: $tableFootBackground;
+        border-top: 1px solid $tableBorderColor;
+    }
 
-    &.table-odd tr:nth-child(2n-1) td {
-        background-color: #f2f2f2;
+    &.table-odd tbody tr:nth-child(2n-1) td {
+        background-color: $tableOddBackground;
     }
 
     &.table-border{
+        border: 1px solid $tableBorderColor;
+        
+        thead{
+            border: none;
+        }
+        
+        th,
+        td{
+            border-left: 1px solid $tableBorderColor;
+            border-width: 0 0 0 1px;
+            
+            &:first-child{
+                border-left-width: 0;
+            }
+        }
+        
         td {
-            border-bottom: 1px solid #cbcbcb;
+            border-bottom: 1px solid $tableBorderColor;
         }
         
         tbody > tr:last-child > td {

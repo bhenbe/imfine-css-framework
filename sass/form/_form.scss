@@ -1,24 +1,26 @@
 form {
-	margin-bottom: $baseLineHeight;
+	margin-bottom: calculateRem( $basePadding, rem );
     
     fieldset {
         border: none;
-        margin: 0 0 $baseLineHeight 0;
-        padding: $baseLineHeight 0 0 0;
+        margin: 0 0 calculateRem( $basePadding, rem ) 0;
+        padding: calculateRem( $basePadding, rem ) 0 0 0;
     }
     legend {
-        padding: $basePadding;
+        padding: calculateRem( $basePadding, rem );
         font-weight: 700;
     }
 
     label {
 	   display: block;
-	   margin-bottom: $baseLineHeight;
+	   margin-bottom: calculateRem( $basePadding / 4, rem );
     }
 
     input[type="radio"],
-    input[type="checkbox"] {
-	   margin: 0 $basePadding / 2;
+    input[type="checkbox"],
+    input[type="radio"]:checked,
+    input[type="checkbox"]:checked{
+	   margin: 0 calculateRem( $basePadding / 2, rem );
 	   vertical-align: text-top;
     }
     
@@ -35,8 +37,8 @@ form {
     input[type="date"] {
         display: inherit;
         height: $baseLineHeight;
-        padding: $basePadding / 2;
-        margin: 0 0 $basePadding 0;
+        padding: calculateRem( $basePadding / 2, rem );
+        margin: 0 0 calculateRem( $basePadding, rem ) 0;
         width: 100%;
         vertical-align: middle;
     }
@@ -55,9 +57,9 @@ form {
     
     textarea {
         height: auto;
-        min-height: 60px;
+        min-height: calculateRem( 60px, rem );
         width: 100%;
-        margin-bottom: $basePadding;
+        margin-bottom: calculateRem( $basePadding, rem );
     }
     
     textarea,
@@ -94,7 +96,12 @@ form {
     input[type="button"],
     input[type="radio"],
     input[type="checkbox"] {
-      width: auto;
+        width: auto;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        height: calculateRem( $baseFontSize * $baseLineHeight, rem );
     }
     
     @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -104,8 +111,8 @@ form {
         }
     }
     select,
-    input[type="file"] {
-        height: $baseFontSize;
+    input[type="file"]{
+        height: calculateRem( ( $baseFontSize * $baseLineHeight ) + $basePadding, rem );
         line-height: $baseFontSize;
     }
     select[multiple],

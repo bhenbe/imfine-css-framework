@@ -5,13 +5,29 @@
     background: transparent;
     border: $buttonBorderWidth solid transparent;
     border-radius: $buttonBorderRadius;
-    @include baseButton($linkColor, $bodyColor, $bodyColor);
+    @include baseButton($bodyColor, $linkColor, $linkColor);
+    
+    &.button-success{
+        @include baseButton($bodyColor, $successColor, $successColor);
+    }
+    
+    &.button-danger{
+        @include baseButton($bodyColor, $dangerColor, $dangerColor);
+    }
 }
 
 .button-line{
     display: inline-block;
     border-radius: $buttonBorderRadius;
     @include baseLineButton($linkColor, $bodyColor, $buttonLineBorderWidth);
+    
+    &.button-success{
+        @include baseLineButton($successColor, $bodyColor, $buttonLineBorderWidth);
+    }
+    
+    &.button-danger{
+        @include baseLineButton($dangerColor, $bodyColor, $buttonLineBorderWidth);
+    }
 }
 
 .button,

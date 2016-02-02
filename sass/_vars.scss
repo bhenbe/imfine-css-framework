@@ -1,19 +1,19 @@
 /*** Typography ***/
-$primaryFont:    'Ubuntu', sans-serif !default; 
+$primaryFont:    'Open Sans', sans-serif !default; 
 $baseFontSize:   16px !default; 
 $smallFontSize:  12px !default;
 $largeFontSize:  18px !default;
-$baseFontWeight: 500 !default;
+$baseFontWeight: 400 !default;
 $baseLineHeight: 1.5 !default;
 
-$headingFont:       'Lora', serif !default;
+$headingFont:       $primaryFont !default;
 $heading1Size:      38px !default; 
 $heading2Size:      34px !default;  
 $heading3Size:      30px !default; 
 $heading4Size:      26px !default; 
 $heading5Size:      22px !default; 
 $heading6Size:      18px !default;
-$headingWeight:     300 !default;
+$headingWeight:     700 !default;
 $headingLineHeight: 1.1 !default;
 
 /*** padding & radius ***/
@@ -26,7 +26,8 @@ $baseBorderRadius: 3px !default;
 $bodyColor:      #fff !default;
 $fontColor:      #111 !default;
 $headingColor:   #666 !default;
-$alertColor:     #F44336 !default;
+$secondaryColor: lighten($fontColor,40%);
+$dangerColor:    #F44336 !default;
 $successColor:   #009688 !default;
 $linkColor:      #2196F3 !default;
 $linkHoverColor: lighten($linkColor, 15%) !default;
@@ -39,15 +40,22 @@ $formPlaceholder:  #ccc !default;
 /*** button ***/
 $buttonBorderWidth:     1px !default;
 $buttonBorderRadius:    $baseBorderRadius !default;
-$buttonLineBorderWidth: 6px !default;
+$buttonLineBorderWidth: 1px !default;
 
 /*** alert ***/
 $alertBorderRadius: $baseBorderRadius !default;
 
-$alertDangerBackground: #ffcdd2 !default;
+$alertDangerBackground: #ffebee  !default;
 $alertDangerForeground: #c62828 !default;
 $alertDangerBorder:     #e53935 !default;
 
-$alertSuccessBackground: #c8e6c9 !default;
+$alertSuccessBackground: #e8f5e9 !default;
 $alertSuccessForeground: #388e3c !default;
 $alertSuccessBorder:     #66bb6a !default;
+
+/*** table ***/
+$tableBorderColor:    #eee !default;
+$tableBorderRadius:   $baseBorderRadius !default;
+$tableHeadBackground: transparent !default;
+$tableFootBackground: transparent !default;
+$tableOddBackground:  #efefef !default;

@@ -9,6 +9,7 @@
 .container{
     display: flex;
     width: 100%;
+    max-width: calculateRem($baseMaxWidth, rem);
     
     & > .col {
         flex: 1;

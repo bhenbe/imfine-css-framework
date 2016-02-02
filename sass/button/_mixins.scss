@@ -2,12 +2,13 @@
     color: $foregroundColor;
     background: $backgroundColor;
     border: 1px solid $borderColor;
+    transition: all 1s linear;
     
     &:hover,
     &:active{
         color: $foregroundColor;
-        background: darken($backgroundColor, 10%);
-        border-color: darken($borderColor, 10%);
+        background: darken($backgroundColor, 25%);
+        border-color: darken($borderColor, 25%);
     }
 }
 
