@@ -1,29 +1,12 @@
-/*** Main ***/
-
-/*** Colors ***/
-$fontColor:    #111 !default;
-$headingColor: #666 !default;
-
-$colorRed:     #F44336 !default;
-$colorBlue:    #2196F3 !default;
-$colorGreen:   #009688 !default;
-$colorOrange:  #FF5722 !default;
-
-$linkColor:      $colorBlue !default;
-$linkHoverColor: lighten($linkColor, 15%) !default;
-
-$formBorder:      #ccc !default;
-$formPlaceholder: #ccc !default;
-
 /*** Typography ***/
-$primaryFont:    'Ubuntu', sans-serif !default;
-$secondaryFont:  'Lora', serif !default;
-
+$primaryFont:    'Ubuntu', sans-serif !default; 
 $baseFontSize:   16px !default; 
 $smallFontSize:  12px !default;
 $largeFontSize:  18px !default;
+$baseFontWeight: 500 !default;
+$baseLineHeight: 1.5 !default;
 
-$baseWeight:        500 !default;
+$headingFont:       'Lora', serif !default;
 $heading1Size:      38px !default; 
 $heading2Size:      34px !default;  
 $heading3Size:      30px !default; 
@@ -33,15 +16,38 @@ $heading6Size:      18px !default;
 $headingWeight:     300 !default;
 $headingLineHeight: 1.1 !default;
 
-$baseLineHeight: calculateRem( $baseFontSize * 1.5 ) !default;
-$baseMargin: calculateRem( $baseFontSize, rem ) !default;
+/*** padding & radius ***/
+$baseMaxWidth:     1440px !default;
+$basePadding:      16px !default;
+$baseMargin:       $basePadding !default;
+$baseBorderRadius: 3px !default;
 
-/*** padding ***/
-$baseMaxWidth: 1440px !default;
-$basePadding:  16px !default;
+/*** Colors ***/
+$bodyColor:      #fff !default;
+$fontColor:      #111 !default;
+$headingColor:   #666 !default;
+$alertColor:     #F44336 !default;
+$successColor:   #009688 !default;
+$linkColor:      #2196F3 !default;
+$linkHoverColor: lighten($linkColor, 15%) !default;
+
+/*** Forms ***/
+$formBorder:       #ccc !default;
+$formBorderRadius: $baseBorderRadius !default;
+$formPlaceholder:  #ccc !default;
 
 /*** button ***/
-$buttonBorderWidth:         1px !default;
-$buttonLineBorderWidth:     6px !default;
-$buttonBaseBackgroundColor: $colorBlue !default;
-$buttonBaseForegroundColor: white !default;
+$buttonBorderWidth:     1px !default;
+$buttonBorderRadius:    $baseBorderRadius !default;
+$buttonLineBorderWidth: 6px !default;
+
+/*** alert ***/
+$alertBorderRadius: $baseBorderRadius !default;
+
+$alertDangerBackground: #ffcdd2 !default;
+$alertDangerForeground: #c62828 !default;
+$alertDangerBorder:     #e53935 !default;
+
+$alertSuccessBackground: #c8e6c9 !default;
+$alertSuccessForeground: #388e3c !default;
+$alertSuccessBorder:     #66bb6a !default;

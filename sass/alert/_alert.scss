@@ -1,0 +1,49 @@
+.alert{
+    position: relative;
+    display: block;
+    padding: $basePadding;
+    margin-bottom: $baseMargin;
+    border-radius: $alertBorderRadius;
+    border: 1px solid transparent;
+    
+    &.alert-success{
+        background: $alertSuccessBackground;
+        color: $alertSuccessForeground;
+        border-color: $alertSuccessBorder;
+        
+        a{
+            color: $alertSuccessForeground;
+            
+            &:hover,
+            &:active{
+                color: darken($alertSuccessForeground, 10%);
+            }
+        }
+    }
+    
+    &.alert-danger{
+        background: $alertDangerBackground;
+        color: $alertDangerForeground;
+        border-color: $alertDangerBorder;
+        
+        a{
+            color: $alertDangerForeground;
+            
+            &:hover,
+            &:active{
+                color: darken($alertDangerForeground, 10%);
+            }
+        }
+    }
+    
+    &.alert-success,
+    &.alert-danger{
+        a{
+            text-decoration: underline;
+        }
+    }
+    
+    p{
+        margin: 0;
+    }
+}

@@ -4,12 +4,14 @@
     display: inline-block;
     background: transparent;
     border: $buttonBorderWidth solid transparent;
-    @include baseButton($buttonBaseForegroundColor, $buttonBaseBackgroundColor, $buttonBaseBackgroundColor);
+    border-radius: $buttonBorderRadius;
+    @include baseButton($linkColor, $bodyColor, $bodyColor);
 }
 
 .button-line{
     display: inline-block;
-    @include baseLineButton($colorBlue, white, $buttonLineBorderWidth);
+    border-radius: $buttonBorderRadius;
+    @include baseLineButton($linkColor, $bodyColor, $buttonLineBorderWidth);
 }
 
 .button,

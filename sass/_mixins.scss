@@ -26,6 +26,15 @@
     }
 }
 
+/* create new breakpoint */
+@mixin minBreakpoint($breakpoint) {
+    $breakpoint: calculateRem($breakpoint, rem);
+
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
 @mixin resetUl() {
     margin: 0;
     padding: 0;

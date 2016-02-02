@@ -1,7 +1,0 @@
-@mixin minBreakpoint($breakpoint) {
-    $breakpoint: calculateRem($breakpoint, rem);
-
-    @media (min-width: $breakpoint) {
-        @content;
-    }
-}
